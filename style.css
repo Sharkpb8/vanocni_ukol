@@ -1,0 +1,17 @@
+body {
+    /* display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column; */
+    
+}
+
+p {
+    font-size: 100px;
+}
+
+a {
+    border-color: aqua;
+    border-radius: 5px;
+}
