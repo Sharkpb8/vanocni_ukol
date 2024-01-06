@@ -8,7 +8,7 @@ body {
 }
 
 p {
-    font-size: 100px;
+    width: 15px;
 }
 
 a {
@@ -38,5 +38,9 @@ button {
     position: center;
     width: 80px;
     height: 80px;
+    cursor: pointer;
+}
+
+.number {
     cursor: pointer;
 }
