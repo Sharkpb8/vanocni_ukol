@@ -4,17 +4,24 @@ function generate_color(){
     var letters = "0123456789ABCDEF"; 
     var color = '#';
     var classid = ".circle";
+    const colorList = [];
     
     for(let i = 1;i<=ammount;i++){
         var idIncrease = classid+String(i);
         for(let i = 0; i<6;i++){
             color += letters[(Math.floor(Math.random() * 16))]; 
         }
+        colorList.push(color);
         console.log(idIncrease);
         console.log(color);
         document.querySelector(idIncrease).style["background-color"]= color;
         color = "#";
     }
+    var random = Math.floor(Math.random()* ammount);
+    console.log(random);
+    console.log(colorList[random]);
+    document.getElementById("gc").innerHTML = colorList[random];
+
 }
 
 function ammountpicker2(){
