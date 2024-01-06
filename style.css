@@ -33,14 +33,6 @@ li {
  cursor: pointer;
 }
 
-button {
-    list-style: none;
-    position: center;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-}
-
 .number {
     cursor: pointer;
 }

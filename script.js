@@ -28,38 +28,47 @@ function generate_color(){
 
 function ammountpicker2(){
     ammount = 2;
+    generate_color();
 }
 
 function ammountpicker3(){
     ammount = 3;
+    generate_color();
 }
 
 function ammountpicker4(){
     ammount = 4;
+    generate_color();
 }
 
 function ammountpicker5(){
     ammount = 5;
+    generate_color();
 }
 
 function ammountpicker6(){
     ammount = 6;
+    generate_color();
 }
 
 function ammountpicker7(){
     ammount = 7;
+    generate_color();
 }
 
 function ammountpicker8(){
     ammount = 8;
+    generate_color();
 }
 
 function ammountpicker9(){
     ammount = 9;
+    generate_color();
 }
 
 function ammountpicker10(){
     ammount = 10;
+    generate_color();
 }
 
 function check1(){
@@ -67,7 +76,7 @@ function check1(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[0];
     }
 }
 
@@ -76,7 +85,7 @@ function check2(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[1];
     }
 }
 
@@ -85,7 +94,7 @@ function check3(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[2];
     }
 }
 
@@ -94,7 +103,7 @@ function check4(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[3];
     }
 }
 
@@ -103,7 +112,7 @@ function check5(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[4];
     }
 }
 
@@ -112,7 +121,7 @@ function check6(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[5];
     }
 }
 
@@ -121,7 +130,7 @@ function check7(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[6];
     }
 }
 
@@ -130,7 +139,7 @@ function check8(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[7];
     }
 }
 
@@ -139,7 +148,7 @@ function check9(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[8];
     }
 }
 
@@ -148,6 +157,6 @@ function check10(){
         document.getElementById("an").innerHTML = "correct";
         generate_color();
     }else{
-        document.getElementById("an").innerHTML = "Wrong";
+        document.getElementById("an").innerHTML = "Wrong This is "+colorList[9];
     }
 }
