@@ -15,3 +15,28 @@ a {
     border-color: aqua;
     border-radius: 5px;
 }
+
+ul {
+    padding: 0 20px;
+ margin: 0 auto;
+ list-style: none;
+ text-align:center;
+
+}
+li {
+
+ border-radius: 80px; 
+ display: inline-block;
+ width: 80px;
+ height: 80px;
+ margin: 6px;
+ cursor: pointer;
+}
+
+button {
+    list-style: none;
+    position: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
