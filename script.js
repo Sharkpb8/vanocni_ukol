@@ -248,6 +248,6 @@ function restart(){
         var whiteRestart = ".cell"+(i+1);
         document.querySelector(whiteRestart).style["background-color"]= whiteColor;
     }
-    win = true;
+    win = false;
     document.getElementById("np").innerHTML = "Next player is Red";
 }
