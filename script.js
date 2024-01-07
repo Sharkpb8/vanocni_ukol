@@ -81,6 +81,7 @@ function check1(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[0];
+        document.querySelector(".circle1").style["background-color"]= whiteColor;
     }
 }
 
@@ -90,6 +91,7 @@ function check2(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[1];
+        document.querySelector(".circle2").style["background-color"]= whiteColor;
     }
 }
 
@@ -99,6 +101,7 @@ function check3(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[2];
+        document.querySelector(".circle3").style["background-color"]= whiteColor;
     }
 }
 
@@ -108,6 +111,7 @@ function check4(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[3];
+        document.querySelector(".circle4").style["background-color"]= whiteColor;
     }
 }
 
@@ -117,6 +121,7 @@ function check5(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[4];
+        document.querySelector(".circle5").style["background-color"]= whiteColor;
     }
 }
 
@@ -126,6 +131,7 @@ function check6(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[5];
+        document.querySelector(".circle6").style["background-color"]= whiteColor;
     }
 }
 
@@ -135,6 +141,7 @@ function check7(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[6];
+        document.querySelector(".circle7").style["background-color"]= whiteColor;
     }
 }
 
@@ -144,6 +151,7 @@ function check8(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[7];
+        document.querySelector(".circle8").style["background-color"]= whiteColor;
     }
 }
 
@@ -153,6 +161,7 @@ function check9(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[8];
+        document.querySelector(".circle9").style["background-color"]= whiteColor;
     }
 }
 
@@ -162,5 +171,6 @@ function check10(){
         generate_color();
     }else{
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[9];
+        document.querySelector(".circle10").style["background-color"]= whiteColor;
     }
 }
