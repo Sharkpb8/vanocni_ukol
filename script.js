@@ -16,6 +16,7 @@ const winCondition = [
     [0,4,8],
     [2,4,6]
 ]
+var win = false;
 
 function generate_color(){
     var letters = "0123456789ABCDEF"; 
@@ -191,6 +192,7 @@ function check10(){
 
 
 function Tic(clickedDiv){
+    if(!win){
     var divClass = String(".")+clickedDiv.classList[0];
     var poleIndex = divClass.substring(5);
     console.log(poleIndex);
@@ -213,10 +215,10 @@ function Tic(clickedDiv){
     }
     console.log(Pole);
     winning();
+    }
 }
 
 function winning(){
-    let Win = false;
     for(let i =0;i<winCondition.length;i++){
         const condition = winCondition[i];
         const cellA = Pole[condition[0]];
@@ -226,11 +228,11 @@ function winning(){
         if(cellA == "" || cellB == "" || cellC == ""){
             continue;
         }else if(cellA == cellB && cellB == cellC){
-            Win = true;
+            win = true;
             break;
         }
     }
-    if(Win){
+    if(win){
         if(player==true){
             document.getElementById("np").innerHTML = "Blue Won";
         }else{
@@ -246,5 +248,6 @@ function restart(){
         var whiteRestart = ".cell"+(i+1);
         document.querySelector(whiteRestart).style["background-color"]= whiteColor;
     }
-    
+    win = true;
+    document.getElementById("np").innerHTML = "Next player is Red";
 }
