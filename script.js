@@ -1,6 +1,7 @@
 var ammount;
 const colorList = [];
 var winner;
+var whiteColor = "#FFFFFF";
 
 function generate_color(){
     var letters = "0123456789ABCDEF"; 
@@ -18,12 +19,15 @@ function generate_color(){
         document.querySelector(idIncrease).style["background-color"]= color;
         color = "#";
     }
+    for(let i = ammount+1;i<=10;i++){
+        var toWhite = classid+String(i);
+        document.querySelector(toWhite).style["background-color"]= whiteColor;
+    }
     var random = Math.floor(Math.random()* ammount);
     winner = colorList[random]
     console.log(random);
     console.log(winner);
     document.getElementById("gc").innerHTML = "What circle is "+ winner;
-
 }
 
 function ammountpicker2(){
