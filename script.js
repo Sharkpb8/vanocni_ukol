@@ -5,6 +5,7 @@ var whiteColor = "#FFFFFF";
 var player = true;
 var redColor = "#FF0000"
 var blueColor = "#0000FF"
+const Pole = [null,null,null,null,null,null,null,null,null];
 
 function generate_color(){
     var letters = "0123456789ABCDEF"; 
@@ -181,13 +182,19 @@ function check10(){
 
 function Tic(clickedDiv){
     var divClass = String(".")+clickedDiv.classList[0];
+    var poleIndex = divClass.substring(5);
+    console.log(poleIndex);
     console.log(divClass);
     if(player==true){
         document.querySelector(divClass).style["background-color"]= redColor;
+        Pole[poleIndex-1] = "1";
         player=false;
+        document.getElementById("np").innerHTML = "Next player is Blue";
     }else{
         document.querySelector(divClass).style["background-color"]= blueColor;
+        Pole[poleIndex-1] = "0";
         player=true;
+        document.getElementById("np").innerHTML = "Next player is Red";
     }
-    
+    console.log(Pole);
 }
