@@ -195,6 +195,8 @@ function Tic(clickedDiv){
     var poleIndex = divClass.substring(5);
     console.log(poleIndex);
     console.log(divClass);
+    document.getElementById("wi").innerHTML = "";
+    if(Pole[poleIndex-1]==""){
     if(player==true){
         document.querySelector(divClass).style["background-color"]= redColor;
         Pole[poleIndex-1] = "R";
@@ -205,6 +207,9 @@ function Tic(clickedDiv){
         Pole[poleIndex-1] = "B";
         player=true;
         document.getElementById("np").innerHTML = "Next player is Red";
+    }
+    }else{
+        document.getElementById("wi").innerHTML = "Wrong pole";
     }
     console.log(Pole);
     winning();
