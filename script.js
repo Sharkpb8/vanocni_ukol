@@ -5,7 +5,17 @@ var whiteColor = "#FFFFFF";
 var player = true;
 var redColor = "#FF0000"
 var blueColor = "#0000FF"
-const Pole = [null,null,null,null,null,null,null,null,null];
+const Pole = ["","","", "","","", "","",""];
+const winCondition = [
+    [0,1,2],
+    [3,4,5],
+    [6,7,8],
+    [0,3,6]
+    [1,4,7],
+    [2,5,8],
+    [0,4,8],
+    [2,4,6]
+]
 
 function generate_color(){
     var letters = "0123456789ABCDEF"; 
@@ -187,14 +197,40 @@ function Tic(clickedDiv){
     console.log(divClass);
     if(player==true){
         document.querySelector(divClass).style["background-color"]= redColor;
-        Pole[poleIndex-1] = "1";
+        Pole[poleIndex-1] = "R";
         player=false;
         document.getElementById("np").innerHTML = "Next player is Blue";
     }else{
         document.querySelector(divClass).style["background-color"]= blueColor;
-        Pole[poleIndex-1] = "0";
+        Pole[poleIndex-1] = "B";
         player=true;
         document.getElementById("np").innerHTML = "Next player is Red";
     }
     console.log(Pole);
+    winning();
+}
+
+function winning(){
+    let Win = false;
+    for(let i =0;i<winCondition.length;i++){
+        const condition = winCondition[i];
+        const cellA = Pole[condition[0]];
+        const cellB = Pole[condition[1]];
+        const cellC = Pole[condition[2]];
+
+        if(cellA == "" || cellB == "" || cellC == ""){
+            continue;
+        }else if(cellA == cellB && cellB == cellC){
+            Win = true;
+            break;
+        }
+    }
+    if(Win){
+        if(player==true){
+            document.getElementById("np").innerHTML = "Blue Won";
+        }else{
+            document.getElementById("np").innerHTML = "Red Won";
+        }
+        
+    }
 }
