@@ -239,3 +239,12 @@ function winning(){
         
     }
 }
+
+function restart(){
+    for(let i =0;i<=8;i++){
+        Pole[i] = "";
+        var whiteRestart = ".cell"+(i+1);
+        document.querySelector(whiteRestart).style["background-color"]= whiteColor;
+    }
+    
+}
