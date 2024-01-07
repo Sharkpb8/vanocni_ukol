@@ -17,7 +17,7 @@ a {
 }
 
 ul {
-    padding: 0 20px;
+ padding: 0 20px;
  margin: 0 auto;
  list-style: none;
  text-align:center;
@@ -35,4 +35,18 @@ li {
 
 .number {
     cursor: pointer;
+}
+
+#cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+#CellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
 }

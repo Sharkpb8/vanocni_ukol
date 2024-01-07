@@ -2,6 +2,9 @@ var ammount;
 const colorList = [];
 var winner;
 var whiteColor = "#FFFFFF";
+var player = true;
+var redColor = "#FF0000"
+var blueColor = "#0000FF"
 
 function generate_color(){
     var letters = "0123456789ABCDEF"; 
@@ -173,4 +176,18 @@ function check10(){
         document.getElementById("an").innerHTML = "Wrong This is "+colorList[9];
         document.querySelector(".circle10").style["background-color"]= whiteColor;
     }
+}
+
+
+function Tic(clickedDiv){
+    var divClass = String(".")+clickedDiv.classList[0];
+    console.log(divClass);
+    if(player==true){
+        document.querySelector(divClass).style["background-color"]= redColor;
+        player=false;
+    }else{
+        document.querySelector(divClass).style["background-color"]= blueColor;
+        player=true;
+    }
+    
 }
