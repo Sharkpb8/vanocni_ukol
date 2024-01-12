@@ -2,6 +2,7 @@
     width: 15px;
     cursor: pointer;
     display: inline-block;
+    margin: 5px;
 }
 
 ul {
@@ -22,10 +23,14 @@ li {
  cursor: pointer;
 }
 
-.othertext {
-
+.difficultytext {
+    margin: 0px;
 }
 
 body {
     text-align: center;
+}
+
+p {
+    font-size: 30px;
 }
