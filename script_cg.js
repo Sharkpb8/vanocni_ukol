@@ -2,6 +2,7 @@ var ammount;
 const colorList = [];
 var winner;
 var whiteColor = "#FFFFFF";
+var ulList = document.getElementById("circleList");
 
 function generate_color(){
     var letters = "0123456789ABCDEF"; 
@@ -19,10 +20,6 @@ function generate_color(){
         document.querySelector(idIncrease).style["background-color"]= color;
         color = "#";
     }
-    for(let i = ammount+1;i<=10;i++){
-        var toWhite = classid+String(i);
-        document.querySelector(toWhite).style["background-color"]= whiteColor;
-    }
     var random = Math.floor(Math.random()* ammount);
     winner = colorList[random]
     console.log(random);
@@ -30,48 +27,81 @@ function generate_color(){
     document.getElementById("gc").innerHTML = "What circle is "+ winner;
 }
 
+function createli(){
+    for(let i =1;i<=ammount;i++){
+        let newLi = document.createElement("li");
+        let clickchecking = "check"+String(i);
+        let cirkleadd = "circle"+String(i);
+        newLi.className = cirkleadd;
+        ulList.appendChild(newLi);
+    }
+}
+
+function deleteli(){
+    while (ulList.firstChild) {
+        ulList.removeChild(ulList.firstChild);
+    }
+}
+
 function ammountpicker2(){
     ammount = 2;
+    deleteli()
+    createli()
     generate_color();
 }
 
 function ammountpicker3(){
     ammount = 3;
+    deleteli()
+    createli()
     generate_color();
 }
 
 function ammountpicker4(){
     ammount = 4;
+    deleteli()
+    createli()
     generate_color();
 }
 
 function ammountpicker5(){
     ammount = 5;
+    deleteli()
+    createli()
     generate_color();
 }
 
 function ammountpicker6(){
     ammount = 6;
+    deleteli()
+    createli()
     generate_color();
 }
 
 function ammountpicker7(){
     ammount = 7;
+    createli()
     generate_color();
 }
 
 function ammountpicker8(){
     ammount = 8;
+    deleteli()
+    createli()
     generate_color();
 }
 
 function ammountpicker9(){
     ammount = 9;
+    deleteli()
+    createli()
     generate_color();
 }
 
 function ammountpicker10(){
     ammount = 10;
+    deleteli()
+    createli()
     generate_color();
 }
 
