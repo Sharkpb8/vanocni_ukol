@@ -30,9 +30,17 @@ function generate_color(){
 function createli(){
     for(let i =1;i<=ammount;i++){
         let newLi = document.createElement("li");
-        let clickchecking = "check"+String(i);
         let cirkleadd = "circle"+String(i);
         newLi.className = cirkleadd;
+        newLi.onclick = function() {
+            if(colorList[i]==winner){
+                document.getElementById("an").innerHTML = "correct";
+                generate_color();
+            }else{
+                document.getElementById("an").innerHTML = "Wrong This is "+colorList[i];
+                document.querySelector("."+cirkleadd).style["background-color"]= whiteColor;
+            }
+        };
         ulList.appendChild(newLi);
     }
 }
