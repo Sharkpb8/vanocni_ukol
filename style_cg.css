@@ -1,5 +1,7 @@
-p {
+.ammount {
     width: 15px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 ul {
@@ -20,6 +22,10 @@ li {
  cursor: pointer;
 }
 
-.number {
-    cursor: pointer;
+.othertext {
+
+}
+
+body {
+    text-align: center;
 }
