@@ -57,10 +57,3 @@ function ammountpick(ammountid){
     createli()
     generate_color();
 }
-
-function ammountpicker2(){
-    ammount = 2;
-    deleteli()
-    createli()
-    generate_color();
-}
