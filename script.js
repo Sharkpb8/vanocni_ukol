@@ -249,5 +249,9 @@ function restart(){
         document.querySelector(whiteRestart).style["background-color"]= whiteColor;
     }
     win = false;
-    document.getElementById("np").innerHTML = "Next player is Red";
+    if(player){
+        document.getElementById("np").innerHTML = "Next player is Red";
+    }else{
+        document.getElementById("np").innerHTML = "Next player is Blue";
+    }
 }
