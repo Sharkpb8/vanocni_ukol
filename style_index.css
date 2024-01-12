@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    background-color: rgb(53, 122, 43);
+}
+
+p{
+    font-size: 80px;
+}
+
+a {
+    font-size: 50px;
+    line-height: 80px;
+}
